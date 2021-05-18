@@ -138,8 +138,8 @@ Drawer myDrawer({required BuildContext context, GestureTapCallback? onTap}) {
           onTap: () async {
             return await WcFlutterShare.share(
                 sharePopupTitle: 'Share',
-                subject: 'This is subject',
-                text: 'This is text',
+                subject: 'FourHome',
+                text: 'Share This App ?',
                 mimeType: 'text/plain',
                 iPadConfig: IPadConfig(
                   originX: 0,
