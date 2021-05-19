@@ -23,9 +23,12 @@ class _InAppWebViewExampleScreenState extends State<InAppWebViewExampleScreen> {
       crossPlatform: InAppWebViewOptions(
         useShouldOverrideUrlLoading: true,
         mediaPlaybackRequiresUserGesture: false,
+        javaScriptEnabled: true,
       ),
       android: AndroidInAppWebViewOptions(
         useHybridComposition: true,
+        allowFileAccess: true,
+        allowContentAccess: true,
       ),
       ios: IOSInAppWebViewOptions(
         allowsInlineMediaPlayback: true,
